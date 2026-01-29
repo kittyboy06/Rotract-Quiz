@@ -9,7 +9,7 @@ function App() {
   const [score, setScore] = useState(0);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen w-full relative overflow-hidden">
         {/* CRT Scanline Overlay */}
         <div className="scanlines"></div>
